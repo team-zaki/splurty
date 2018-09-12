@@ -30,6 +30,19 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Adding Bootstrap4 gem
+gem 'bootstrap', '~> 4.1.3'
+
+group :doc do
+  # bundle exec rake doc:rails
+  gem 'sdoc', require: false
+  # Use Autoprefixer with Bootstrap
+  gem 'autoprefixer-rails'
+end
+
+gem 'bootstrap-sass', '~> 3.2.0'
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
@@ -46,3 +59,8 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.3.3'
+end
