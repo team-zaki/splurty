@@ -32,6 +32,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Adding Bootstrap4 gem
 gem 'bootstrap', '~> 4.1.3'
+gem 'simple_form'
 
 group :doc do
   # bundle exec rake doc:rails
